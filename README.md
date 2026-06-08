@@ -4,7 +4,9 @@
 This project simulates a **real-time data engineering pipeline** using **Apache Kafka** and **AWS**.
 
 A Python-based producer streams stock market data into Kafka topics, while a consumer processes the data and stores it in **Amazon S3** for downstream analytics.  
-The project was built as a **hands-on learning exercise** to understand streaming data pipelines and their operational aspects.**Business framing:** similar pipelines power real-time recommendation engines, 
+The project was built as a **hands-on learning exercise** to understand streaming data pipelines and their operational aspects.
+
+**Business framing:** similar pipelines power real-time recommendation engines, 
 live pricing updates, and user behaviour tracking in consumer tech platforms.
 
 ---
