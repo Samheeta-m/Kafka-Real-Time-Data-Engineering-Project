@@ -4,7 +4,8 @@
 This project simulates a **real-time data engineering pipeline** using **Apache Kafka** and **AWS**.
 
 A Python-based producer streams stock market data into Kafka topics, while a consumer processes the data and stores it in **Amazon S3** for downstream analytics.  
-The project was built as a **hands-on learning exercise** to understand streaming data pipelines and their operational aspects.
+The project was built as a **hands-on learning exercise** to understand streaming data pipelines and their operational aspects.**Business framing:** similar pipelines power real-time recommendation engines, 
+live pricing updates, and user behaviour tracking in consumer tech platforms.
 
 ---
 
@@ -20,6 +21,13 @@ Amazon S3
       ↓
 AWS Glue + Athena (Analytics)
 ```
+| Step | Description |
+|------|-------------|
+| 1. Produce | Python producer simulates live stock market feed |
+| 2. Stream | Messages published to Kafka topic with partitioning |
+| 3. Consume | Python consumer reads and processes stream |
+| 4. Store | Data stored in Amazon S3 as JSON records |
+| 5. Analyse | AWS Glue catalogues data, Athena queries with SQL |
 ---
 
 ## Technologies Used
